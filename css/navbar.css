@@ -1,0 +1,131 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+.header{
+    width:100%;
+/*        background-image: url(back.jpg);*/
+    background-color: rgba(25,25,25,25);
+        position: sticky; 
+    top: 0;
+/*        overflow: hidden;*/
+    z-index: 999;
+/*    margin-top: -60px;*/
+    margin-top: 5px;
+    padding-top: 2px;
+    transition: 1s;
+    opacity: 0.7;
+}
+.headi{
+    font-family: sans-serif;
+    color: white;
+    
+}
+.logo{
+    color:white;
+    float:left;
+    margin-left: 9vw;
+    margin-top:-33px;
+    position: absolute;
+}
+.imgsize{
+margin: auto;
+    width: 1200px;
+    height: 100px;
+}
+div.containernav
+{    width: 100%;
+    font-family: Raleway;
+    margin: 10px auto;
+/*    margin-top: 3vh;*/
+	padding: 2vh 0px;
+	text-align: center;	
+    z-index: 999;
+}
+
+.shiftNavbar{
+   padding-top: 10px;
+    background-color: rgb(20,27,38);
+}
+
+
+div.containernav a{
+      align-content: center;
+    color: #FFF;
+    text-decoration: none;
+    font: 15px Raleway;
+    margin: 0px 2vw;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+/* Border from Y to X  */
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.4s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+/*popover*/
+
+.popover__wrapper {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -150px;
+    transform: translate(0,10px);
+    background-color: #BFBFBF;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+}
+.popover__content:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #BFBFBF transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,-20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+.popover__message {
+  text-align: center;
+}

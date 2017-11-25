@@ -1,0 +1,54 @@
+.container11 {
+  position: relative;
+  float: left;
+  width: 33.33%;
+}
+
+.image11 {
+  display: block;
+  width: 300px;
+  height:300px;
+}
+
+.overlay11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container11:hover .overlay11 {
+  height: 30%;
+  opacity: 0.8;
+}
+
+.text11 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
